@@ -1,0 +1,311 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<partial name="Sidebar" />
+<div class="rook3">
+    <h4>Investment Portfolio Management.</h4>
+    <hr />
+    <div class="wrapped">
+        <div class="mini-block light-border-shadow">
+            <label>TOTAL INVESTED AMOUNT</label>
+            <hr/>
+            <p>R 2,36 M</p>
+        </div>
+        <div class="mini-block light-border-shadow">
+            <label>INVESTMENTS</label>
+            <hr />
+            <p>1,234</p>
+        </div>
+        <div class="mini-block light-border-shadow">
+            <label>RATE OF RETURN</label>
+            <hr />
+            <p>0.04%</p>
+        </div>
+        <div class="mini-block light-border-shadow">
+            <label>RISKS-IDENTFIED</label>
+            <hr />
+            <p>4</p>
+        </div>
+        <div class="mini-block light-border-shadow">
+            <label>INITIATIVES IN REVIEW</label>
+            <hr />
+            <p>16</p>
+        </div>
+        <div class="mini-block light-border-shadow">
+            <label>INITIATIVES APPROAVED</label>
+            <hr />
+            <p>36</p>
+        </div>
+    </div>
+    <div class="wrapped">
+        <div class="block midme">
+            <h6>Focus Area</h6>
+            <table class="table">
+                <thead>
+                    <tr class="light-text">
+                        <th>NAME</th>
+                        <th>STATUS</th>
+                        <th>TREND</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Financial</td>
+                        <td>
+                            <div class="yellow-circle color-yellow"></div>
+                        </td>
+                        <td>
+                            <div class="tri-block up">
+                                <div class="tri-square color-green"></div>
+                                <div class="tri-tri"></div>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Stakeholders</td>
+                        <td>
+                            <div class="yellow-circle color-yellow"></div>
+                        </td>
+                        <td>
+                            <div class="tri-block">
+                                <div class="tri-square color-green"></div>
+                                <div class="tri-tri"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Internal Processes</td>
+                        <td>
+                            <div class="yellow-circle color-yellow"></div>
+                        </td>
+                        <td>
+                            <div class="tri-block">
+                                <div class="tri-square color-green"></div>
+                                <div class="tri-tri"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Organisational Capacity</td>
+                        <td>
+                            <div class="green-cicle color-green"></div>
+                        </td>
+                        <td>
+                            <div class="tri-block up">
+                                <div class="tri-square color-green"></div>
+                                <div class="tri-tri"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="block midme">
+            <h6>Organizational Performance</h6>
+            <table class="table">
+                <thead>
+                    <tr class="light-text">
+                        <th>ORGANIZATIONAL UNIT</th>
+                        <th>STATUS</th>
+                        <th>TREND</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CEO</td>
+                        <td>
+                            <div class="yellow-circle color-yellow"></div>
+                        </td>
+                        <td>
+                            <div class="tri-block up">
+                                <div class="tri-square color-green"></div>
+                                <div class="tri-tri"></div>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Regions</td>
+                        <td>
+                            <div class="yellow-circle color-green"></div>
+                        </td>
+                        <td>
+                            <div class="tri-block">
+                                <div class="tri-square color-green"></div>
+                                <div class="tri-tri"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Finance</td>
+                        <td>
+                            <div class="yellow-circle color-yellow"></div>
+                        </td>
+                        <td>
+                            <div class="tri-block">
+                                <div class="tri-square color-green"></div>
+                                <div class="tri-tri"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Operations</td>
+                        <td>
+                            <div class="green-cicle color-yellow"></div>
+                        </td>
+                        <td>
+                            <div class="tri-block up">
+                                <div class="tri-square color-green"></div>
+                                <div class="tri-tri"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Profits</td>
+                        <td>
+                            <div class="green-cicle color-green"></div>
+                        </td>
+                        <td>
+                            <div class="tri-block up">
+                                <div class="tri-square color-green"></div>
+                                <div class="tri-tri"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="block midme">
+            <h6> Cash Flow Performance (in R M)</h6>
+            <canvas id="myChart" />
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            var ar = [16, 26, 39, 24, 36, 25, 56]
+            var nums = ["Financial", "Stakeholders", "Internal Processes", "Operations", "Santum Portfolio", "Health", "Future"]
+            const ctx = document.getElementById('myChart');
+
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: nums
+                    ,
+                    datasets: [{
+                        label: 'Projection',
+                        data: ar,
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+        </script>
+
+        <div class="block mid">
+            <h6>Initiatives Status</h6>
+            <table class="table">
+                <thead>
+                    <tr class="light-text">
+                        <th>NAME</th>
+                        <th>STATUS</th>
+                        <th>TREND</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Financial</td>
+                        <td>
+                            <div class="yellow-circle color-yellow"></div>
+                        </td>
+                        <td>
+                            <div class="tri-block up">
+                                <div class="tri-square color-green"></div>
+                                <div class="tri-tri"></div>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Stakeholders</td>
+                        <td>
+                            <div class="yellow-circle color-yellow"></div>
+                        </td>
+                        <td>
+                            <div class="tri-block">
+                                <div class="tri-square color-green"></div>
+                                <div class="tri-tri"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Internal Processes</td>
+                        <td>
+                            <div class="yellow-circle color-yellow"></div>
+                        </td>
+                        <td>
+                            <div class="tri-block">
+                                <div class="tri-square color-green"></div>
+                                <div class="tri-tri"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Organisational Capacity</td>
+                        <td>
+                            <div class="green-cicle color-green"></div>
+                        </td>
+                        <td>
+                            <div class="tri-block up">
+                                <div class="tri-square color-green"></div>
+                                <div class="tri-tri"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="block mid">
+            <h6>Risks By Priority</h6>
+            <canvas id="second" />
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var are = [16, 26, 39, 24]
+        var numsd = ["Financial", "Stakeholders", "Santum Portfolio",  "Future"]
+        const ctx = document.getElementById('second');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: numsd
+                ,
+                datasets: [{
+                    label: 'Projection',
+                    data: are,
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+    </script>
+
+
+</div>

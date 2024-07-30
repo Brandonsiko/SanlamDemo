@@ -1,0 +1,641 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.splash-page{
+    display: flex;
+    justify-content:center;
+    height:35em;
+    width:100%;  
+}
+
+.splash-page form{
+    display:flex;
+    width:45vw;
+    align-content:center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.splash-page form div{
+    margin:4px;
+}
+
+.splash-design {
+    display: flex;
+    width: 45vw;
+    background-color: lightgray;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.splash-page img{
+    width :30vw;
+}
+
+.my-btn{
+    max-width:50px;
+}
+
+main{
+    display:flex;
+    align-content:center;
+    justify-content:center;
+    width:100%;
+    height:100%;
+   
+}
+
+/*side bar*/
+
+.sidebar{
+    position:sticky;
+    top:55px;
+    left:0;
+    width:200px;
+    height:92vh;
+    background-color:rgb(0, 9, 52);
+}
+
+.sidebar ul {
+    display: flex;
+    align-content: flex-start;
+    justify-content:  center;
+    flex-direction:column;
+    width:150px;
+}
+
+.sidebar li {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    list-style: none;
+    font-size: larger;
+    cursor: pointer;
+ 
+}
+
+.sidebar li a {
+    color: white;
+    text-decoration:none;
+}
+
+.sidebar li:hover {
+    background-color: darkblue;
+    text-decoration: underline;
+}
+
+.rook {
+    width: 100%;
+  
+}
+
+.block01{
+    width:100%;
+    height:60vh;
+    background-color:beige;
+}
+
+.rook3 {
+    padding-left: 20px;
+    background-color: transparent;
+    overflow-y: auto;
+    width:100%;
+}
+
+.main-img{
+    width:inherit;
+    height:inherit;
+
+}
+
+#invest-pic{
+    width:20vw;
+    border-radius:12px;
+    margin:20px;
+}
+
+.media-banner{
+    width:72vw;
+    height:auto;
+}
+
+.article-image{
+    border-radius:12px;
+    width:28.2vw;
+    
+}
+
+
+/*here is the block level items that I am going to use for displaying the mainpage*/
+.rook-block01 {
+    border-right: 1px solid blue;
+    border-bottom: 1px solid blue;
+    width: 27vh;
+    height: 30vh;
+    margin: 38px;
+    padding:2px;
+}
+
+
+.rook-block01 label{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:600;
+    
+}
+
+
+.roblox{
+   
+}
+
+.roblox h4 {
+    font-size: 21px;
+}
+
+.rook-block01 img{
+    width:20px;
+    height:20px;
+}
+
+.block01-items{
+    display:flex;
+    flex-wrap:wrap;
+    padding-top:30px;
+}
+
+#sanlam-name {
+    color: mediumblue;
+    position: absolute;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 7vw;
+    opacity: 0.4;
+    text-shadow: 1px 1px 2px white;
+    transform: translateY(-3vw);
+}
+
+.slogen { 
+    position: absolute;
+    color: white;
+    font-size: 3vw;
+    text-shadow: 1px 1px 2px blue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transform: translateY(-40px)
+}
+
+#pic-div{
+    width:50%;
+    height:550px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+}
+
+.mini-para{
+    width:40vw;
+    font-family:'Cambria Math';
+}
+
+.textbox-02{
+    display :flex;
+    justify-content:right;
+    align-items:center;
+}
+
+.far-apart {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px;
+}
+.far-apart label{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:larger;
+    font-weight:800;
+}
+
+.block{
+    border:1px solid black;
+    width:96%;
+    margin:20px;
+   
+}
+
+.smaller-block{
+    width:12vw;
+}
+
+.small-block{
+    width:15vw;
+}
+
+.mid{
+    width:30vw;
+}
+
+.midme{
+    width:65vh;
+    font-size:2.2vh;
+}
+
+.half{
+    width:48vw;
+}
+
+.halfme{
+    width:60vw;
+}
+
+.maxi{
+    width:70vw;
+}
+
+
+
+.wrapped{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.mini-block {
+    border: 1px solid black;
+    width: 28vh;
+    margin:8px;
+
+}
+.mini-block p{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:blue;
+    font-family:'Cascadia Code'
+}
+
+/*here we are drawing items to see how they look*/
+
+.yellow-circle {
+    width: 25px;
+    height: 25px;
+    border-radius:50%;
+}
+.green-cicle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    
+}
+
+.tri-block {
+    width: 35px;
+    height: 25px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.tri-square {
+    width: 15px;
+    height: 8px;
+}
+
+.tri-tri {
+    width: 0px;
+    height: 0px;
+    border-top: 8px solid white;
+    border-bottom: 8px solid white;
+    border-left: 20px solid greenyellow;
+}
+
+.up{
+    transform:rotate(-45deg);
+}
+
+.color-yellow {
+    background-color: yellow;
+}
+
+.color-green {
+    background-color: greenyellow;
+}
+
+.color-blue{
+    background-color:darkblue;
+    color:white;
+    padding:3px;
+}
+
+.color-grey{
+    background-color:lightgray;
+}
+
+.color-orange{
+    background-color:rgb(223, 108, 48);
+}
+
+.light-text{
+    color:lightgray;
+}
+
+/*this is going to be a section where I am going to build other icons*/
+
+.user-icon{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+}
+
+.drop-block{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.key-items{
+    color:rgb(0, 65, 255);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.mini-padding{
+    padding:20px;
+}
+
+
+.small-padding{
+    padding:10px;
+}
+
+.small-margin{
+    margin:5px;
+}
+
+.side-small-margin{
+    margin-left:25px;
+    margin-right:25px;
+}
+.side-small-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.hide-deco{
+    list-style:none;
+}
+
+.tiny{
+    width:30vw;
+    height:25vh;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.tiny div{
+    width:160px;
+
+}
+
+.calender-border{
+    border:1px solid lightgrey;
+    width:45vh;
+    border-radius:12px;
+}
+
+.calender-days{
+    width:44vh;
+
+}
+.calender-days li {
+    width: 40px;
+    font-size: 2vh;
+}
+
+.cal-day{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:aqua;
+    border-radius:50%;
+}
+
+.text-design{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    padding:5px;
+}
+
+.light-border-shadow {
+    border:1px solid lightgrey;
+    box-shadow: 12px 12px 2px 1px lightgrey;
+}
+
+.padd-btn {
+    /*padding-left: 2%;
+    padding-right: 2%;*/
+    padding: 3px 1px 3px 1%;
+}
+
+
+/*this is the part where make a library of a textbase styling that makes it look nice in simple terms styling the wording!*/
+
+.dot-block{
+    width:16vw;
+    height:16px;
+}
+
+.dot-block01 {
+    width: 8vw;
+    height: 16px;
+}
+
+.dot-block02 {
+    width: 6vw;
+    height: 16px;
+}
+
+.dot-block03 {
+    width: 12vw;
+    height: 16px;
+}
+
+.dot-block04 {
+    width: 14vw;
+    height: 16px;
+}
+
+
+.dot-block-info {
+    width: 16px;
+    height: 16px;
+}
+
+.align-in-line{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:inherit;
+}
+
+.align-in-line li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+}
+
+.settings-page{
+    background-color:whitesmoke;
+    height:100vh;
+    width:26vw;
+}
+
+.settings-list{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    font-family:'HoloLens MDL2 Assets';
+    height:45vh;
+}
+
+.settings-list li{
+    width:6vw;
+    margin:14px;
+}
+.settings-list li:hover{
+    font-size:large;
+    cursor:pointer;
+}
+
+.setting-display{
+    display:flex;
+    padding-top:70px;   
+    justify-content:flex-start;
+    align-items:center;
+    flex-direction:column;
+    padding-left:35px;
+}
+
+.auto-height{
+    height:auto;
+}
+
+.mid-height{
+    height:40vh;
+}
+
+.design-container {
+    width: 100px;
+    height: 70px;
+    border-top-left-radius: 75%;
+    border-top-right-radius: 75%;
+    background-color: darkgoldenrod;
+}
+
+.design-circle{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background-color:coral;
+}
+
+.design-circle02 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+.flexed-center{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.flexed-cente-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+
+.stretch_underline{
+    width:8.5vw;
+    height:1px;
+    background-color:black;
+}
+
+
+
+
+
+/*THIS IS THE COROUSEL STUFF AS A PLUGGIN*/
+
+/*@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap");*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color:whitesmoke;
+}
+.swiper-container {
+    width: 1150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide .item {
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+    .swiper-slide .item div {
+        width: 378px;
+        height: 300px;
+        border: 1px solid lightgrey;
+        background: white;
+        /*       float: left; */
+    }
+
+.splash-login{
+    height:100%;
+    margin-left:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.swiper-slide img{
+    width:40vh;
+    height:20vh;
+}

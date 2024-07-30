@@ -1,0 +1,135 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<partial name="Sidebar" />
+<div class="rook3">
+    <h3>Sanlam Health Platform </h3>
+    <p>Where your health needs are met.</p>
+    <hr />
+    <div class="wrapped far-apart">
+        <div class="small-block small-padding calender-border">
+            <div class="far-apart mini-para">
+                <label>Active Members</label>
+                <select>
+                    <option>Select Patient</option>
+                    <option>Micheal</option>
+                    <option>Davids</option>
+                    <option>Brandon</option>
+                    <option>Lilly</option>
+                    <option>Tom</option>
+                </select>
+            </div>
+            <br class="small-margin"/>
+            <div >
+                <label class="text-center small-block text-design">1974</label>
+                <p>We care about your health and wellbeing hence we want to make sure we value and take care of your health needs</p>
+            </div>
+            <hr class="small-margin"/>
+            <div>
+                <label class="text-center small-block text-design">287</label>
+                <p >We proud to share the amount of community healthcare services we grew in the past year alone</p>
+            </div>
+           <br/>
+            
+        </div>
+        <div class="calender-border">
+            <br/>
+            <div class="calender-days text-center small-padding">
+                <label class="text-design"> < </label>
+                <label>@ViewBag.Month</label>
+                <label>@DateTime.Now.Year</label>
+                <label class="text-design">></label>
+
+            </div>
+            <ul class=" hide-deco wrapped calender-days mini-para small-padding">
+                <li class="small-padding">Mo</li>
+                <li class="small-padding">Tu</li>
+                <li class="small-padding">We</li>
+                <li class="small-padding">Th</li>
+                <li class="small-padding">Fr</li>
+                <li class="small-padding">Sa</li>
+                <li class="small-padding">Su</li>
+            </ul>
+            <div class="">
+                <ul class="hide-deco wrapped small-padding mini-para calender-days">
+                    @{
+                        for (int i = 1; i < 32; i++)
+                        {
+                            if (ViewBag.day == i)
+                            {
+                                <li class="cal-day">@i</li>
+                            }
+                            else
+                            {
+                                <li class="small-padding">@i</li>
+                            }
+
+                        }
+                    }
+                </ul>
+            </div>
+
+        </div>
+        <div class="mid">
+            <form class="mid">
+                <input type="text" value="Search" class="form-control light-text" />
+            </form>
+            <br/>
+            <div class="border border-secondary mini-padding">
+                <label class="text-center mid text-primary">Sanlam Health Growth</label>
+                <ul class="hide-deco light-text">
+                    <li class="far-apart">2023 <div class="dot-block color-blue"></div></li>
+                    <li class="far-apart">2022 <div class="dot-block03 color-orange"></div></li>
+                    <li class="far-apart">2021 <div class="dot-block01 color-green"></div></li>
+                    <li class="far-apart">2020 <div class="dot-block04 color-yellow"></div></li>
+                    <li class="far-apart">2019 <div class="dot-block02 color-blue"></div></li>
+                </ul>
+                <div>
+                    <ul class="align-in-line hide-deco ">
+                        <li class="align-in-line">
+                            <div class="dot-block-info color-blue small-margin"></div>
+                            Profit
+                        </li>
+                        <li class="align-in-line">
+                            <div class="dot-block-info color-yellow small-margin"></div>
+                            Employment
+                        </li>
+                        <li class="align-in-line">
+                            <div class="dot-block-info color-orange small-margin"></div>
+                            Equity
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <!--
+        <div class="block half">
+            
+            <table class="table border border-light">
+                <thead>
+                    <tr>
+                        <th>test</th>
+                        <th>test</th>
+                        <th>test</th>
+                        <th>test</th>
+                        <th>test</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>answer</td>
+                        <td>answer</td>
+                        <td>answer</td>
+                        <td>answer</td>
+                        <td>answer</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        -->
+    </div>
+   
+</div>

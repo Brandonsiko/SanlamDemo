@@ -1,0 +1,79 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<partial name="Sidebar" />
+<div class="rook3">
+    <h3>Wealth </h3>
+    <p>Enter detailed information regarding incomes and expenses in the fields below.</p>
+    <hr/>
+    <div class="wrapped">
+        <div>
+            <h6>Overview</h6>
+            <div class="light-border-shadow small-padding mid mid-height">
+                
+                <canvas id="myChart" />
+            </div>
+        </div>
+        <br/>
+        <div class="side-small-padding">
+            <h6>Campaign</h6>
+            <div class="light-border-shadow small-padding mid mid-height side-small-margin flexed-center">
+                <canvas id="pieChart" />
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ar = [167456, 265365, 395806, 436824, 553689, 456425, 707856, 450335, 903576, 395806, 436824, 553689]
+        var nums = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: nums
+                ,
+                datasets: [{
+                    label: 'stock',
+                    data: ar,
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+    </script>
+    <script>
+
+        const cc = document.getElementById('pieChart');
+
+        new Chart(cc, {
+            type: 'pie',
+            data: {
+                labels: ["apartment", "live stock", "operations", "business", "Sanlam portfolio", "health", "career"]
+                ,
+                datasets: [{
+                    label: 'stock',
+                    data: [34, 76, 56, 45, 75,86,23],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+    </script>
+</div>
